@@ -1,4 +1,4 @@
-input = """forward 2
+forward 2
 down 9
 up 6
 forward 1
@@ -997,19 +997,4 @@ forward 2
 forward 7
 down 3
 down 3
-forward 4"""
-
-data = input.split("\n")
-forward = 0
-depth = 0
-for each in data:
-  x = each.split(" ")
-  print(x[0], x[1])
-  if x[0] == "forward":
-    forward += int(x[1])
-  elif x[0] == "down":
-    depth += int(x[1])
-  elif x[0] == "up":
-    depth -= int(x[1])
-print(forward, depth)
-print(forward*depth)
+forward 4
